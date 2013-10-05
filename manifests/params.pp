@@ -22,6 +22,7 @@ class composer::params {
       $logoutput       = false
       $tmp_path        = '/tmp'
       $php_package     = 'php5-cli'
+      $git_package     = 'git'
       $curl_package    = 'curl'
       $wget_package    = 'wget'
     }
@@ -32,6 +33,7 @@ class composer::params {
       $logoutput       = false
       $tmp_path        = '/tmp'
       $php_package     = 'php-cli'
+      $git_package     = 'git'
       $curl_package    = 'curl'
       $wget_package    = 'wget'
     }
