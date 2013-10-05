@@ -45,7 +45,6 @@ define composer::project(
   $tries          = 3,
   $timeout        = 1200
 ) {
-  require git
   require composer
 
   Exec {
