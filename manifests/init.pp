@@ -49,6 +49,7 @@ class composer(
   $logoutput       = $composer::params::logoutput,
   $tmp_path        = $composer::params::tmp_path,
   $php_package     = $composer::params::php_package,
+  $git_package     = $composer::params::git_package,
   $curl_package    = $composer::params::curl_package,
   $wget_package    = $composer::params::wget_package,
   $composer_home   = $composer::params::composer_home,
@@ -58,6 +59,10 @@ class composer(
 
   if defined(Package[$php_package]) == false {
     package { $php_package: ensure => present, }
+  }
+
+  if defined(Package[$git_package]) == false {
+    package { $git_package: ensure => present, }
   }
 
   # download composer
